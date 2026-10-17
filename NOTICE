@@ -1,0 +1,39 @@
+This repository contains two kinds of third-party material.
+
+Code
+----
+`third_party/` contains modified copies of model classes from the Open Catalyst
+Project library ocpmodels, Copyright (c) Facebook, Inc. and its affiliates,
+under the MIT License. The full text of that license is third_party/LICENSE.
+The LICENSE file at the repository root covers the code written for this
+paper and does not replace third_party/LICENSE. The DimeNet++ file also
+retains the MIT notice of Matthias Fey. Upstream development of ocpmodels
+now continues as FAIR-Chem (https://github.com/facebookresearch/fairchem). The pretrained
+checkpoints used to compute the embeddings were released by the Open Catalyst
+Project. That distribution is no longer available from the original project
+page. One listing that still includes the same checkpoints is mace-ocp
+(https://github.com/ACEsuit/mace-ocp).
+
+Data
+----
+`data/lic/LC_database_rev_with_cif.csv` is derived from the layered-compound
+intercalation dataset reported by Kawaguchi et al., deposited at Figshare
+(10.6084/m9.figshare.26885734.v1) under CC BY 4.0. Cite:
+
+  Kawaguchi et al., Scientific Data 11, 2024. https://doi.org/10.1038/s41597-024-04008-2
+  Kawaguchi et al., ACS Phys. Chem. Au 2024. https://doi.org/10.1021/acsphyschemau.3c00063
+
+`data/aoi/AoI_with_timestamp.csv` is derived from Materials Project
+formation-energy data. Materials Project data are distributed under CC BY 4.0.
+The table follows the Alloys of Interest (AoI) benchmark, whose data and code
+are deposited at Zenodo (https://zenodo.org/records/7659267). Cite:
+
+  Li et al., npj Computational Materials 9, 2023. https://doi.org/10.1038/s41524-023-01012-9
+
+The `.npy` files under `data/*/embeddings/` are GNN embeddings computed by the
+authors from those structures. They are released with this repository under
+CC BY 4.0. Please cite the accompanying paper:
+
+  Sugiura and Mizoguchi, Achieving Robust Extrapolation in Materials Property
+  Prediction via Decoupled Transfer Learning. PRX Intelligence (2026).
+  https://doi.org/10.1103/pbrg-x848

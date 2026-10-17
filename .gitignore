@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+
+outputs/
+work/
+checkpoints/
+
+*.pt
+*.pkl
+*.lmdb
+*.lmdb-lock
+*_energy_true.npy
+*_target_true.npy
